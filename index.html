@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>chat-interface</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      <header>
+        <div class="logo">
+          <span>Chat App</span>
+        </div>
+      </header>
+      <div class="chat-template">
+        <div class="userDisplay">
+          <ul class="userList">
+            <li class="user">
+              <img src="user-png.png" alt="user-1">
+              <div class="chat-box">
+                <div class="outline">
+                  <div class="top">
+                    <div class="userName">User 1</div>
+                    <div class="time">11:25 AM</div>
+                  </div>
+                  <div class="bottom">
+                    <div class="textContent">lorem ipsum dolor si...</div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="chat-container" id="user-1">
+          <div class="top-area">
+            <span class="close-button"><i class="fa fa-arrow-left"></i></span>
+            <img src="user-png.png" alt="user-1">
+            <span class="userName">User 1</span>
+          </div>
+          <div class="chat-messages">
+            <div class="message sender-bubble">
+              <div class="message-text">Hey, what's up?</div>
+              <div class="message-timestamp">10:30 AM</div>
+            </div>
+            <div class="message user-bubble">
+              <div class="message-text">Like usual, How about you?</div>
+              <div class="message-timestamp">10:35 AM</div>
+            </div>
+          </div>
+          <form class="chat-input-form">
+            <input type="text" class="chat-input" required placeholder="Type a message..." />
+            <button type="submit" class="button send-button"><i class="fa fa-angle-right"></i></button>
+          </form>
+          <div class="button-box">
+            <button class="button clear-chat-button"><i class="fa fa-trash"></i>Clear Chat</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+
+</html>
